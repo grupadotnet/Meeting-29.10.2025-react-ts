@@ -6,7 +6,7 @@ const App = () => {
     const [count, setCount] = useState(0);
 
     return (
-        <div>
+        <div className="app-container">
             <button
                 onClick={() => setCount((previousCount) => previousCount + 1)}
             >
