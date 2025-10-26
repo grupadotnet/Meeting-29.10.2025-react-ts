@@ -1,1 +1,31 @@
+# Set the default behavior
 * text=auto
+
+# Source code
+*.css             text diff=css
+*.html            text diff=html
+*.js              text eol=lf
+*.mjs             text eol=lf
+*.cjs             text eol=lf
+*.json            text eol=lf
+*.jsx             text eol=lf
+*.sass            text
+*.scss            text diff=css
+*.ts              text eol=lf
+*.tsx             text eol=lf
+
+# Documentation
+*.md              text diff=markdown
+
+# Configs
+.editorconfig     text
+.env              text
+.gitattributes    text
+package.json      text eol=lf
+package-lock.json text eol=lf -diff
+
+# Graphics
+*.svg             binary
+
+# Prevents massive diffs from built files
+dist/*            binary
